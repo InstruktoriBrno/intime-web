@@ -1,0 +1,636 @@
+/*
+tymy
+Code CSS
+*/
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/* Hlavni strana */
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+html
+{
+	background-color: #000000;
+	margin: 0px; 
+	padding: 0px; 
+	border: 0px;
+/*	background-image: url(fond.png); */
+	background-repeat: repeat; 
+	background-position: top center;
+}
+
+body
+{
+	background-color: transparent;
+	margin: 0px; 
+	padding: 0px; 
+	border: 0px;
+}
+
+img { margin: 0px; padding: 0px; border: 0px; }
+a img {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+a:link {color: #FAFAFA; }
+a:hover { color: #808080; }
+a:visited:hover { color: #808080; }
+a:visited { color: #FAFAFA; }
+
+div#myContent {
+	position:relative;
+	top: -280px;
+	left: 0px;
+	width: 700px;
+}
+
+div.osoba {
+    position: relative;
+}
+
+div.olajda{ height: 310px; }
+div.michal{ height: 230px; }
+div.verca{ height: 220px; }
+div.vitek{ height: 345px; }
+div.ditka{ height: 240px; }
+div.jirka{ height: 310px; }
+div.terka{ height: 300px; }
+
+div.nadpis {
+    position:relative;
+    top: 0px;
+    left: 10px;
+    width: 660px;
+    height: 30px;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    border-color: #333333;
+	font-family: "Book Antiqua", "Bookman Old Style";
+	font-size: 24px;
+	font-style: normal;
+	font-weight: normal;
+	text-align: inherit;
+	overflow: visible;
+    text-shadow: 2px 2px 2px #000000;
+    margin: 0 0 10 0px;
+}
+
+div.sponzori {
+    position: absolute;
+    top: 120px;
+}
+
+div.sponzori-left {
+    float: left;
+    position: relative;
+}
+
+div.sp-img {
+    padding: 0 75px;
+}
+
+div.sponzori-right {
+    float: right;
+    position: relative;
+    width: 300px;
+}
+
+div.tym-left  {
+    float: left;
+    position: relative;
+}
+
+div.tym-right  { 
+    float: right;
+    position: relative;
+    width: 500px;
+}
+
+table#teamsTable {
+    position: absolute;
+    top: 50px;
+    left: 15px;
+    width: 600px;
+}
+
+tr.uroven3 { 
+    color: red;
+}
+
+tr.uroven2 { 
+    color: yellow;
+}
+
+tr.uroven1 { 
+    color: white;
+}
+
+tr.uroven0 { 
+    color: #00C000;
+}
+
+td.topCell { 
+	font-family: Verdana , "Trebuchet MS" , Sans;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 20px;
+    text-align: justify;
+    margin: 5px;
+    color: #e49539;
+}
+
+td.browncell{
+	font-family: Verdana , "Trebuchet MS" , Sans;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 20px;
+    text-align: justify;
+    margin: 5px;
+	color: color: #e49539;
+}
+
+td.cell {
+	font-family: Verdana , "Trebuchet MS" , Sans;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 20px;
+    text-align: justify;
+    margin: 5px;
+    color: #FFFFFF;
+}
+
+li.odrazka{ 
+	font-family: Verdana , "Trebuchet MS" , Sans;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 20px;
+    text-align: justify;
+    margin: 5px;
+}
+
+div#site /*div velký*/
+{
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	width: 1000px;
+	margin-left: -500px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px;
+	border: 0px;
+	background-color: transparent;
+	height: auto;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/* malý div kolem hlavicky */
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+div#site h1
+{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 1000px;
+	height: 800px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px;
+	border: 0px;
+	background-color: transparent;
+	background-image: url(menu/brown/header.png);
+	background-repeat: no-repeat;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/* Velký Div */
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+/* header image */
+div#site h2
+{
+	position: absolute;
+	top: 133px;
+	left: 0px;
+	width: 1000px;
+	height: 721px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px;
+	border: 0px;
+	background-image: url(menu/brown/body.png);
+    background-repeat: no-repeat;
+}
+
+/* vymezené divy pro linky na podkategorie */
+
+
+
+
+div#paticka
+{
+	position: absolute;
+	top: auto;
+	left: 50%;
+	width: 1000px;
+	height: 50px;
+	margin-left: -500px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	padding: 0px;
+	bottom: 0px;
+	overflow: hidden;
+	border-bottom-color: #333333;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-color: #333333;
+	border-left-color: #333333;
+	border-left-width: 1px;
+	border-top-color: #333333;
+	border-top-width: 1px;
+	border-left-style: solid;
+	border-top-style: solid;
+	border-right-color: #333333;
+	border-right-style: solid;
+	border-right-width: 1px;
+
+}
+
+
+div#paticka_index
+{
+	position: absolute;
+	top: auto;
+	left: 572px;
+	width: 800px;
+	height: 50px;
+	margin-left: -500px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	padding: 0px;
+	bottom: -245px;
+	overflow: hidden;
+	border-bottom-color: #333333;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-color: #333333;
+	border-left-color: #333333;
+	border-left-width: 1px;
+	border-top-color: #333333;
+	border-top-width: 1px;
+	border-left-style: solid;
+	border-top-style: solid;
+	border-right-color: #333333;
+	border-right-style: solid;
+	border-right-width: 1px;
+}
+
+div#map /*map*/
+{
+
+	left: 400px;
+	width: 1000px;
+	margin-left: 70px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px;
+	border: 0px;
+	background-color: transparent;
+	height: 420px;
+	
+
+}
+p em.nadpisy 
+{
+	top: 50px;
+	display: block;
+	font-size: 24px;
+	color: #FFF;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 32px;
+	font-family: "Book Antiqua", "Bookman Old Style";
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 12px;
+	padding: 0px;
+	border: 0px;
+	background-image: url(title.html);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	border-bottom-color: #333333;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+    text-align: center;
+}
+
+p#countDown {
+    font-size: 24px;
+    line-height: 40px;
+}
+
+div#maphead /*map head*/
+{
+	top: 0px;
+	left: 0px;
+	width: 1000px;
+	height: 24px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	padding: 0px;
+	border: 0px;
+	font-size: 24px;
+	color: #126FA5;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 32px;
+	font-family: "Book Antiqua", "Bookman Old Style";
+	text-align:center;
+	display: block;
+	border-bottom-color: #333333;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	text-align: center; 
+}
+
+a.menu {
+	background-image: url(menu/brown/menu.png);
+    position: absolute;
+}
+
+a#zavod  {
+	width: 259px;
+	height: 49px;
+	top: 2px;
+	left: 718px;
+    background-position: 0px 0px;
+}
+a#zavod:hover { background-position: 0px -49px; }
+
+
+a#diskuze {
+	width: 259px;
+	height: 49px;
+	top: 484px;
+	left: 719px;
+    background-position: 0px -98px;
+}
+a#diskuze:hover { background-position: 0px -147px; }
+
+a#legenda {
+	width: 259px;
+	height: 49px;
+	top: 65px;
+	left: 717px;
+    background-position: 0px -294px;
+}
+
+a#legenda:hover { background-position: 0px -343px; }
+
+a#odkoho {
+	width: 259px;
+	height: 49px;
+	top: 310px;
+	left: 719px;
+    background-position: 0px -392px;
+}
+a#odkoho:hover { background-position: 0px -441px; }
+
+a#pravidla {
+	width: 259px;
+	height: 49px;
+	top: 129px;
+	left: 718px;
+    background-position: 0px -490px;
+}
+a#pravidla:hover { background-position: 0px -539px; }
+
+a#prihlasit {
+	width: 259px;
+	height: 49px;
+	top: 190px;
+	left: 719px;
+    background-position: 0px -588px;
+}
+	
+a#prihlasit:hover { background-position: 0px -637px; }
+
+a#tymy {
+	width: 259px;
+	height: 49px;
+	top: 250px;
+	left: 719px;
+    background-position: 0px -686px;
+}
+a#tymy:hover { background-position: 0px -735px; }
+
+a#btym {
+	width: 259px;
+	height: 49px;
+	top: 368px;
+	left: 719px;
+    background-position: 0px -784px;
+}
+a#btym:hover { background-position: 0px -833px; }
+
+a#kontakt {
+	width: 259px;
+	height: 49px;
+	top: 427px;
+	left: 719px;
+    background-position: 0px -196px;
+}
+a#kontakt:hover { background-position: 0px -245px; }
+
+a#sponzori {
+	width: 259px;
+	height: 49px;
+	top: 484px;
+	left: 719px;
+    background-position: 0px -882px;
+}
+a#sponzori:hover { background-position: 0px -931px; }
+
+
+a#sponzor_banner {
+	width: 259px;
+	height: 349px;
+	top: 546px;
+	left: 719px;
+	background-image: url(sponzor_banner.html);
+}
+
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/* Obsah */
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+p
+{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 270px;
+	float: left;
+	margin-left: 0px;
+	margin-right: 10px;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	padding: 0px;
+	border: 0px;
+	background-color: transparent;
+	color: #666666;
+	font-family: Verdana , "Trebuchet MS" , Sans;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 20px;
+}
+
+.brown {
+    color: #e49539;
+}
+
+span#registraceCd {
+    font-weight: bold;
+}
+
+.text {
+	display: block;
+	position:relative;
+/*    top: -280px;*/
+	left: 50px;
+	width: 630px;
+	float: left
+	margin-left: 0px;
+	margin-right: 10px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	padding: 0px;
+	border: 0px;
+	background-color:inherit;
+	color:#FFF;
+	font-family: Verdana , "Trebuchet MS" , Sans;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 20px;
+	height: 500px;
+	text-align: inherit;
+	overflow: visible;
+    text-shadow: 2px 2px 2px #000000;
+    text-align: justify;
+}
+
+p#textmain
+{
+	position:relative;
+	top: -220px;
+	display: block;
+	left: 50px;
+	width: 600px;
+	float: left
+	margin-left: 0px;
+	margin-right: 10px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	padding: 0px;
+	border: 0px;
+	background-color:inherit;
+	color:#FFF;
+	font-family: Verdana , "Trebuchet MS" , Sans;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 17px;
+	height: 100px;
+	text-align: inherit;
+	overflow: visible;
+}
+
+
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/* Oddelovac  */
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+span#sep
+{
+	width: 840px;
+	height: 1px;
+	float: left;
+	clear: both;
+	display: block;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 10px;
+	margin-bottom: 50px;
+	padding: 0px;
+	border: 0px;
+	
+}
+
+span.smaller 
+{
+    font-size: 12px;
+    font-style: italics;
+}
+
+span.cleared
+{
+	width: 630px;
+	height: 5px;
+	float: left;
+	clear: both;
+	display: block;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 2px;
+	padding: 0px;
+	border: 0px;
+	text-align: center;
+}
+
+span.mezera
+{
+	width: 800px;
+	height: 80px;
+	float: left;
+	clear: both;
+	display: block;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 0px;
+	border: 0px;	
+}
+span.caption
+{
+	clear: both;
+	display: block;
+	font-size: 11px;
+	color: #FFF;
+	text-align: left;
+	width: 500px;
+	margin-bottom: 10px;
+	float: left;
+}	

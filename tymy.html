@@ -1,0 +1,171 @@
+  
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+
+<!-- Mirrored from intime.instruktori.cz/tymy.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Mar 2019 08:32:24 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+		<!-- Meta -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Language" content="cs">
+		<!-- /Meta -->
+		<!-- Titulek -->	
+        <title>IN:TI:ME</title>
+		
+		<!-- odkaz na dokument styl -->
+		<link href="styly.css" rel="stylesheet" type="text/css" />
+        <script language="JavaScript" >
+            function startCountdown(id, date) {
+            var countdownDate = new Date(date);
+            //var countdownDate = new Date("6/17/2011 12:00 AM");//input desired date here
+            var currentDate = new Date();
+            var dateDifference = new Date(countdownDate-currentDate);
+            var seconds = dateDifference.valueOf()/1000;
+            CountBack(id, seconds);
+            }
+            function CountBack(id, seconds) {
+                if (seconds < 0) {
+                    seconds = 0;
+                }
+                var DisplayFormat = "DAYS dní, HOURS:MINS:SECS";
+                DisplayFormat = DisplayFormat.replace("DAYS", (Math.floor(seconds/86400))%100000);
+                DisplayFormat = DisplayFormat.replace("HOURS", EnsureTwoDigits((Math.floor(seconds/3600))%24));
+                DisplayFormat = DisplayFormat.replace("MINS", EnsureTwoDigits((Math.floor(seconds/60))%60));
+                DisplayFormat = DisplayFormat.replace("SECS", EnsureTwoDigits((Math.floor(seconds))%60));
+                document.getElementById(id).innerHTML = DisplayFormat;
+                setTimeout("CountBack(" + '"' + id + '"' + "," +(seconds-1)+")", 1000);
+            }
+            function EnsureTwoDigits(digits) {
+                if (digits.toString().length == 1) {
+                    return "0" + digits;
+                } else {
+                    return digits;
+                }
+            }
+        </script>        
+</head>
+
+<body>	
+
+		<!-- Obsah -->
+<div id="site">				
+  <h1>
+  <br>
+  <p id="countDown" class="brown">
+  Do startu zbývá:
+  <br>
+  <span id="cd"></span> <script>startCountdown("cd", "9/27/2013 8:00 PM")</script>
+  <br>
+  </p>
+  	 </h1>
+
+<h2>			
+    <br>   
+       
+    <!--[if IE]> <br> <![endif]-->
+    
+    <a id="zavod" class="menu" href="index-2.html"><img src="images/empty.gif" alt="zavod" /></a><br />
+    <a id="legenda" class="menu" href="legenda.html"><img src="images/empty.gif" alt="legenda" /></a><br />
+    <a id="pravidla" class="menu" href="pravidla.html"><img src="images/empty.gif" alt="pravidla" /></a><br />			
+    <a id="prihlasit" class="menu" href="prihlasit.html"><img src="images/empty.gif" alt="prihlasit" /></a><br />	
+    <a id="tymy" class="menu" href="tymy.html"><img src="images/empty.gif" alt="tymy" /></a><br />
+    <a id="odkoho" class="menu" href="odkoho.html"><img src="images/empty.gif" alt="odkoho" /></a><br />
+    <a id="btym" class="menu" href="btym.html"><img src="images/empty.gif" alt="btym" /></a><br />
+    <a id="kontakt" class="menu" href="kontakt.html"><img src="images/empty.gif" alt="kontakt" /></a><br />
+    <a id="diskuze" class="menu" href="diskuze.html"><img src="images/empty.gif" alt="diskuze" /></a><br />
+    <a id="sponzori" class="menu" href="sponzori.html"><img src="images/empty.gif" alt="diskuze" /></a><br />
+
+    <div id="myContent" class="text">
+  
+  <script language="Javascript">
+function GetRowColHtml(text) {
+    return "<td class='cell'>" + text + "</td>";
+}
+
+function GetRowHtml(index, teamEntry) {
+	var rowHtml = "<tr>";
+    // add col for number
+    rowHtml = rowHtml + GetRowColHtml((index + 1) + ".");
+   
+    // add col for team name
+    rowHtml = rowHtml + GetRowColHtml(teamEntry.Field343);
+
+    // add col for team members' names
+    rowHtml = rowHtml + GetRowColHtml(teamEntry.Field10 + ", " + teamEntry.Field335 + ", " + teamEntry.Field336);
+    
+    return rowHtml + "</tr>";
+}
+
+    function copyDataGrid() {
+		var iframe = document.getElementById("wufooIFrameId");
+		var teamEntries = iframe.contentWindow.FORM.Entries;
+
+		if(!teamEntries || teamEntries.length == 0) {
+		    document.getElementById("tableContainer").innerHTML = "<br>Seznam přihlášených týmů naleznete <a href='http://intime2013.wufoo.com/reports/pihlaena/'>ZDE</a>.";
+			return;
+		}
+
+        var limit = 36;
+        var tableHtml = "";
+		
+		for (var i = 0; i < teamEntries.length && i < limit; i++) {
+            tableHtml = tableHtml + GetRowHtml(i, teamEntries[i]);
+        }
+		
+        if (teamEntries.length >= limit) {
+            tableHtml = tableHtml + "<tr><td colspan='3'>&nbsp;</td></tr>" + "<tr><td class='topCell' colspan='3'>Náhradníci</td></tr>" + "<tr><td colspan='3'><hr></td></tr>"
+            for (var i = limit; i < teamEntries.length; i++) {
+                tableHtml = tableHtml + GetRowHtml(i, teamEntries[i]);
+            }
+        }
+        
+		tableHtml = tableHtml + "<tr><td colspan='3'>&nbsp;</td></tr>";
+		tableHtml = tableHtml + "<tr><td colspan='3'>&nbsp;</td></tr>";
+		
+        // workaround for IE that has read-only tbody
+        var tempNode = document.createElement('div');
+        tempNode.innerHTML = "<table>" + tableHtml + "</table>";
+
+        var tempTBody = tempNode.firstChild.firstChild;
+        var tempLen = tempTBody.childNodes.length;
+           
+        var tbody = document.getElementById("myTableBody");
+        for (var i = 0; i < tempLen; i++) {
+            tbody.appendChild(tempTBody.firstChild);
+        } 
+    }
+</script>
+  
+        
+<div id="wufoo" style="display: none;">
+<iframe id="wufooIFrameId" name="wufooIFrameName" frameborder="0" src="report.html" onload="copyDataGrid()"></iframe>
+</div>
+
+  <p class="text" name="text">
+    <em class="nadpisy">Přihlášené týmy</em>
+	<div id="tableContainer">
+		<table id="teamsTable"> 
+		  <thead><td></td><td class="topCell">Tým</td><td class="topCell">Členové</td></thead>
+		  <tbody id="myTableBody"></tbody>
+		</table>
+	</div>
+
+  </p>
+    
+
+
+
+  </div>
+    
+</h2>  
+  
+<span class="cleared"></span><span id="sep"><br>
+
+</span></div>
+
+</body>
+
+
+<!-- Mirrored from intime.instruktori.cz/tymy.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Mar 2019 08:32:25 GMT -->
+</html>

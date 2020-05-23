@@ -1,0 +1,111 @@
+  
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+
+<!-- Mirrored from intime.instruktori.cz/btymprihlasit.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Mar 2019 08:32:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+		<!-- Meta -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Language" content="cs">
+		<!-- /Meta -->
+		<!-- Titulek -->	
+        <title>IN:TI:ME</title>
+		
+		<!-- odkaz na dokument styl -->
+		<link href="styly.css" rel="stylesheet" type="text/css" />
+        <script language="JavaScript" >
+            function startCountdown(id, date) {
+            var countdownDate = new Date(date);
+            //var countdownDate = new Date("6/17/2011 12:00 AM");//input desired date here
+            var currentDate = new Date();
+            var dateDifference = new Date(countdownDate-currentDate);
+            var seconds = dateDifference.valueOf()/1000;
+            CountBack(id, seconds);
+            }
+            function CountBack(id, seconds) {
+                if (seconds < 0) {
+                    seconds = 0;
+                }
+                var DisplayFormat = "DAYS dní, HOURS:MINS:SECS";
+                DisplayFormat = DisplayFormat.replace("DAYS", (Math.floor(seconds/86400))%100000);
+                DisplayFormat = DisplayFormat.replace("HOURS", EnsureTwoDigits((Math.floor(seconds/3600))%24));
+                DisplayFormat = DisplayFormat.replace("MINS", EnsureTwoDigits((Math.floor(seconds/60))%60));
+                DisplayFormat = DisplayFormat.replace("SECS", EnsureTwoDigits((Math.floor(seconds))%60));
+                document.getElementById(id).innerHTML = DisplayFormat;
+                setTimeout("CountBack(" + '"' + id + '"' + "," +(seconds-1)+")", 1000);
+            }
+            function EnsureTwoDigits(digits) {
+                if (digits.toString().length == 1) {
+                    return "0" + digits;
+                } else {
+                    return digits;
+                }
+            }
+        </script>        
+</head>
+
+<body>	
+
+		<!-- Obsah -->
+<div id="site">				
+  <h1>
+  <br>
+  <p id="countDown" class="brown">
+  Do startu zbývá:
+  <br>
+  <span id="cd"></span> <script>startCountdown("cd", "9/27/2013 8:00 PM")</script>
+  <br>
+  </p>
+  	 </h1>
+
+<h2>			
+    <br>   
+       
+    <!--[if IE]> <br> <![endif]-->
+    
+    <a id="zavod" class="menu" href="index-2.html"><img src="images/empty.gif" alt="zavod" /></a><br />
+    <a id="legenda" class="menu" href="legenda.html"><img src="images/empty.gif" alt="legenda" /></a><br />
+    <a id="pravidla" class="menu" href="pravidla.html"><img src="images/empty.gif" alt="pravidla" /></a><br />			
+    <a id="prihlasit" class="menu" href="prihlasit.html"><img src="images/empty.gif" alt="prihlasit" /></a><br />	
+    <a id="tymy" class="menu" href="tymy.html"><img src="images/empty.gif" alt="tymy" /></a><br />
+    <a id="odkoho" class="menu" href="odkoho.html"><img src="images/empty.gif" alt="odkoho" /></a><br />
+    <a id="btym" class="menu" href="btym.html"><img src="images/empty.gif" alt="btym" /></a><br />
+    <a id="kontakt" class="menu" href="kontakt.html"><img src="images/empty.gif" alt="kontakt" /></a><br />
+    <a id="diskuze" class="menu" href="diskuze.html"><img src="images/empty.gif" alt="diskuze" /></a><br />
+    <a id="sponzori" class="menu" href="sponzori.html"><img src="images/empty.gif" alt="diskuze" /></a><br />
+
+    <div id="myContent" class="text">
+  
+  <div id="wufoo-r7x2x3">
+Fill out my <a href="http://intime2013.wufoo.com/forms/r7x2x3">online form</a>.
+</div>
+<script type="text/javascript">var r7x2x3;(function(d, t) {
+var s = d.createElement(t), options = {
+'userName':'intime2013', 
+'formHash':'r7x2x3', 
+'autoResize':true,
+'height':'1343',
+'async':true,
+'header':'show'};
+s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+s.onload = s.onreadystatechange = function() {
+var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+try { r7x2x3 = new WufooForm();r7x2x3.initialize(options);r7x2x3.display(); } catch (e) {}};
+var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+})(document, 'script');</script>
+    
+  </div>
+    
+</h2>  
+  
+<span class="cleared"></span><span id="sep"><br>
+
+</span></div>
+
+</body>
+
+
+<!-- Mirrored from intime.instruktori.cz/btymprihlasit.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Mar 2019 08:32:26 GMT -->
+</html>
